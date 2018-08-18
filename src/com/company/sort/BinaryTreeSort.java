@@ -1,5 +1,9 @@
 package com.company.sort;
 
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 二叉排序树
  * 小的元素放在父节点左边，大的节点放在父节点的右边，中序输出
@@ -100,12 +104,8 @@ public class BinaryTreeSort implements Sort {
         // 右
         index = this.fetch(elements, parent.right, index);
 
+        Map map = new HashMap();
         return index;
     }
-
-
-
-
-
 
 }
